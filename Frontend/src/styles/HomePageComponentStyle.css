@@ -1,0 +1,85 @@
+.nav {
+    height: 7.5vh;
+    padding: 1rem 3rem;
+}
+
+.main-page {
+    height: 92.5vh;
+}
+
+.semesters-nav {
+    height: 100%;
+    padding: 1rem;
+}
+
+.subjects-grid {
+    height: 100%;
+    padding: 2rem;
+    align-content: flex-start;
+}
+
+.semester {
+    box-shadow: 0 0 5px 5px #eee;
+}
+
+.subject {
+    width: max-content;
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 5px #eee;
+}
+
+.btn-special-design {
+    padding: 2rem;
+    border: none;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-special-design:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-special-design:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+.icon-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition: all 0.25s ease-out;
+}
+
+.icon-btn:hover{
+    transform: scale(1.2);
+}
+
+@keyframes spin-once {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.btn-black:hover .icon {
+    animation: spin-once 0.6s ease-in-out 1;
+}
+
+.continuous-motion {
+    animation: spin-once 1s ease-in-out infinite;
+}
+
+
+.active {
+    padding: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+.active .control-btn .icon-btn .icon {
+    filter: invert(1);
+}

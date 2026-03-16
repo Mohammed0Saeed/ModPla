@@ -1,0 +1,147 @@
+.side-bar{
+    background-color: white;
+    box-shadow: 0 0 1rem #ddd;
+}
+
+.subject-view{
+    overflow: hidden;
+}
+
+.contents-container {
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.back-btn {
+    border: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-special-design {
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-special-design:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-special-design.active {
+    background-color: #000;
+    color: white;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    line-height: 1.1;
+    background: none;
+    z-index: 0;
+    padding: 0.1em 0.2em;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    left: -0.2em;
+    top: 50%;
+    width: calc(100% + 0.4em);
+    height: 1.1em;
+    background: yellow;
+    border-radius: 0.3em;
+    z-index: -1;
+    transform: translateY(-50%) rotate(-3deg);
+    opacity: 0.8;
+}
+
+.add-window {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.add-window::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.input-window {
+    width: 50vw;
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+    z-index: 1;
+}
+
+.loading-window {
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.btn-black {
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.25s ease-out;
+}
+
+.btn-black:hover {
+    transform: scale(1.025);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    fill: #000;
+    transform-origin: center;
+    transition: transform 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes spin-once {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.btn-black:hover .icon {
+    animation: spin-once 0.6s ease-in-out 1;
+}
+
+.continuous-motion {
+    animation: spin-once 1s ease-in-out infinite;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: white;
+    border: none;
+}

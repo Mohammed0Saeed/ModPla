@@ -1,0 +1,43 @@
+.content-container {
+    padding: 3rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.add-btn {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.view-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.view-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.view-window {
+    width: 50vw;
+    background-color: white;
+    position: absolute;
+    border-radius: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+    z-index: 1;
+}
+
